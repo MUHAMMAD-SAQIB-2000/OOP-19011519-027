@@ -1,0 +1,10 @@
+I am learning file 
+handling in
+ java. Are 
+you also
+learning?
+ 	 hi , i am using append mode
+ 	 hi , i am using append mode
+ 	 hi , i am using append mode 
+
+ 	 hi , i am using append mode 

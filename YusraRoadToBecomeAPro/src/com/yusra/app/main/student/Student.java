@@ -2,17 +2,27 @@ package com.yusra.app.main.student;
 
 public class Student {
 	
+	private int id;
 	private String name;
 	private String semester;
 	private int age;
 	
-	public Student(String name, String semester, int age) {
+	public Student(int id , String name, String semester, int age) {
+		this.id = id;
 		this.name = name;
 		this.semester = semester;
 		this.age = age;
 	}
 	
 	public Student() {
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -36,13 +46,15 @@ public class Student {
 	}
 
 	public void setAge(int age) {
-		this.age = age;
+			this.age = age;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", semester=" + semester + ", age=" + age + "]";
+		return "Student [id=" + id + ", name=" + name + ", semester=" + semester + ", age=" + age + "]";
 	}
+
+	
 	
 	
 }

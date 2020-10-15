@@ -72,7 +72,4 @@ public class Customer {
 	public void setCustomerNoOfTransactions(int customerNoOfTransactions) {
 		this.customerNoOfTransactions = customerNoOfTransactions;
 	}
-	
-	
-	
 }

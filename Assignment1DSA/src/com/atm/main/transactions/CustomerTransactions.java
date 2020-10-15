@@ -9,13 +9,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 import com.atm.main.MenuATM;
 import com.atm.main.customer.Customer;
 
 public class CustomerTransactions {
-	private static String transactionFile = "transactions.csv";
+	public static String transactionFile = "transactions.csv";
 	static {
 		File file = new File(transactionFile);
 		if(!file.exists()) {
@@ -29,13 +28,14 @@ public class CustomerTransactions {
 	
 	public static void addStatements(Customer customer,long oldAmount,long newAmount,String depositOrWidthraw,long depositOrWidthrawAmount) {
 		LocalDateTime myDateObj = LocalDateTime.now();
-	    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, dd-MMM-yyyy HH:mm:ss");
+	    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E dd-MMM-yyyy HH:mm:ss");
 	    String formattedDate = myDateObj.format(myFormatObj);
 	    
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(transactionFile, true));
 			writer.append(customer.getCustomerId()+", "+customer.getCustomerName()+", Old Amount="+oldAmount
-			+", "+depositOrWidthraw+" Amount="+depositOrWidthrawAmount+", New balance="+newAmount +", DateAndTime:"+ formattedDate);
+			+", "+depositOrWidthraw+" Amount="+depositOrWidthrawAmount+", New balance="+newAmount +", Transaction Number:"+customer.getCustomerNoOfTransactions()
+			+", DateAndTime:"+ formattedDate);
 			writer.append("\n");
 				
 			writer.close();
@@ -44,11 +44,7 @@ public class CustomerTransactions {
 		}
 	}
 	
-	@SuppressWarnings("resource")
-	public static List<String> displayAllStatements() throws Exception{
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Enter the Customer Id for statement check:-> " );
-		int Id = scan.nextInt();
+	public static List<String> displayAllStatements(int Id) throws Exception{
 		List<String> statements = new ArrayList<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(transactionFile));
@@ -64,17 +60,25 @@ public class CustomerTransactions {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		MenuATM.menu();
+		MenuATM.menu(Id);
 		return null;
 	}
 	
-	public static List<String> displayLast10Statements() throws Exception{
-		List<String> statements = displayAllStatements();
+	public static List<String> displayLast10Statements(int Id) throws Exception{
+		List<String> statements = displayAllStatements(Id);
 		List<String> lastTenStatements = new ArrayList<>(); 
 		int counter = 1;
-		for(int i=statements.size()-1; counter<=10 ;i--) {
-			lastTenStatements.add(statements.get(i));
-			counter++;
+		if(statements.size()>=10) {
+			for(int i=statements.size()-1; counter<=10 ;i--) {
+				lastTenStatements.add(statements.get(i));
+				counter++;
+			}
+		}
+		else {
+			for(int i=statements.size()-1; counter<=statements.size(); i--) {
+				lastTenStatements.add(statements.get(i));
+				counter++;
+			}
 		}
 		return lastTenStatements;
 	}

@@ -1,23 +1,3 @@
-1, MUHAMMAD SAQIB, Old Amount=247100, Deposit Amount=900, New balance=248000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=248000, Withdraw Amount=48000, New balance=200000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=200000, Withdraw Amount=50000, New balance=150000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=150000, Withdraw Amount=50000, New balance=100000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=100000, Deposit Amount=250000, New balance=350000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=350000, Deposit Amount=50000, New balance=400000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=400000, Deposit Amount=10000, New balance=410000, DateAndTime:Thu, 08-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=247100, Deposit Amount=900, New balance=248000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=248000, Withdraw Amount=48000, New balance=200000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=200000, Withdraw Amount=50000, New balance=150000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=150000, Withdraw Amount=50000, New balance=100000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=100000, Deposit Amount=250000, New balance=350000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=350000, Deposit Amount=50000, New balance=400000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=400000, Deposit Amount=10000, New balance=410000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=247100, Deposit Amount=900, New balance=248000, DateAndTime:Thu, 09-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=248000, Withdraw Amount=48000, New balance=200000, DateAndTime:Thu, 10-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=200000, Withdraw Amount=50000, New balance=150000, DateAndTime:Thu, 10-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=150000, Withdraw Amount=50000, New balance=100000, DateAndTime:Thu, 10-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=100000, Deposit Amount=250000, New balance=350000, DateAndTime:Thu, 10-Oct-2020 14:40:38
-1, MUHAMMAD SAQIB, Old Amount=350000, Deposit Amount=50000, New balance=400000, DateAndTime:Thu, 10-Oct-2020 14:40:38
-2, MUHAMMAD SAQIB, Old Amount=400000, Deposit Amount=10000, New balance=410000, DateAndTime:Thu, 10-Oct-2020 14:40:381,
-1, MUHAMMAD SAQIB, Old Amount=300000, Deposit Amount=23000, New balance=323000, DateAndTime:Thu, 08-Oct-2020 22:06:33
-1, MUHAMMAD SAQIB, Old Amount=323000, Withdraw Amount=23000, New balance=300000, DateAndTime:Thu, 08-Oct-2020 22:06:49
+3, FATIMA, Old Amount=10000, Withdraw Amount=900, New balance=9100, Transaction Number:1, DateAndTime:Fri 09-Oct-2020 11:40:24
+3, FATIMA, Old Amount=9100, Withdraw Amount=400, New balance=8700, Transaction Number:2, DateAndTime:Fri 09-Oct-2020 11:43:58
+8, ALI, Old Amount=93404, Withdraw Amount=15000, New balance=78404, Transaction Number:1, DateAndTime:Mon 12-Oct-2020 13:12:20

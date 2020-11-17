@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:globalaliens xmlns:tns="http://www.saqib.org/AlienSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.saqib.org/AlienSchema AlienSchema.xsd ">
+  <tns:alien aid="A1">
+    <tns:name>Saqib</tns:name>
+    <tns:salary>9000</tns:salary>
+  </tns:alien>
+  <tns:alien aid="A2">
+    <tns:name>Saqib</tns:name>
+    <tns:salary>8000</tns:salary>
+  </tns:alien>
+</tns:globalaliens>

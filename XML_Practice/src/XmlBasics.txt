@@ -1,0 +1,26 @@
+Xml
+
+Xml Introduction
+1. eXtensible MaekUp Language
+2. Transfer Data
+3. Configure
+
+Rules..
+1. One root tag..
+2. xml case sensitive
+3. every opening tag needs a closing tag
+4. every attribute value should Be inside a double/single quote
+
+XML parser
+
+Grammer
+1. Structure -> DTD -> Document Type Defination
+2. Content -> Schema
+
+URI, Prefix
+
+client <-------> Server
+1. Html -> layout, data
+2. xml -> data
+3. JSON
+ 

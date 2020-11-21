@@ -21,6 +21,7 @@ public class MainClass {
 		.forEach(x -> System.out.println(x));
 		List<Integer> text = Arrays.asList(1,2,3,4,5,23,43,12,21);
 		
+		
 		text.stream()
 		.map(x -> Integer.valueOf(x))
 		.filter(x -> x%2 == 0)

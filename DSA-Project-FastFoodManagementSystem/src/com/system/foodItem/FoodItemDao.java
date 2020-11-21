@@ -18,18 +18,23 @@ public class FoodItemDao {
 		return foodItem;
 	}
 	
+	public static FoodItem getById(int id) {
+		//FoodItem foodItem = new FoodItem();
+		return foodItems.get(id);
+	}
+	
 	public void getAll() {
 		foodItems.forEach(food -> System.out.println(food.toString()));
 	}
 	
 	public void updateFoodItem() {
 		FoodItem foodItem = foodItems.get(2);
-		//foodItem.setFoodItemId(foodItem.getFoodItemId());
+		foodItem.setFoodItemId(foodItem.getFoodItemId());
 		foodItem.setFoodItemName("Patty Burger");
-//		foodItem.setFoodItemPrice(foodItem.getFoodItemPrice());
-//		foodItem.setFoodItemQuantity(foodItem.getFoodItemQuantity());
-//		foodItem.setFoodItemSize(foodItem.getFoodItemSize());
-//		foodItem.setAvailable(foodItem.isAvailable());
+		foodItem.setFoodItemPrice(foodItem.getFoodItemPrice());
+		foodItem.setFoodItemQuantity(foodItem.getFoodItemQuantity());
+		foodItem.setFoodItemSize(foodItem.getFoodItemSize());
+		foodItem.setAvailable(foodItem.isAvailable());
 		foodItems.set(2, foodItem );
 	}
 	
